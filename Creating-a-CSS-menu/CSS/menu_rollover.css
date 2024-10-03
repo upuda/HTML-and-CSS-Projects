@@ -1,0 +1,131 @@
+body {
+    background: #184352;
+}
+.wrap {
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+}
+.menu-container {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    background-color: #184352;
+}
+.menu {
+    font: bold 12px/18px sans-serif;
+    text-align: center;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu li {
+    color: #B3B3B3;
+    display: inline-block;
+    margin-right: -2px;
+    position: relative;
+    padding: 12px 40px;
+    border: 1px solid #9D9FA2;
+    border-radius: 1.5px;
+    background-color: #387593;
+    cursor: pointer;
+}
+.menu li:hover{
+    background-color: #5EAFDF;
+    color: #fff;
+}
+.menu li:hover ul{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+.submenu{
+    padding: 0;
+    left: 0;
+    position: absolute;
+    top: 43.5px;
+    width: 125.5 px;
+    opacity: 0;
+    visibility: hidden;
+}
+.submenu li{
+    background-color: #387593;
+    display: block;
+    color: #B3B3B3;
+}
+.submenu li:hover{
+    color: #fff;
+    background-color: #5EAFDF;
+}
+h1{
+    color: #a7d9ea;
+    margin-left: 50px;
+    text-shadow: 1px .5px 4px rgba(0, 0, 0, 0.6);
+}
+p{
+    color: #a7d9ea;
+    margin-left: 25px;
+    text-shadow: 1px .5px 4px rgba(0, 0, 0, 0.6);
+}
+.container{
+    width: 450px;
+    height: 150px;
+    background-color: #faebd7;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+.container .squares:nth-child(-n+4){
+    background-image: url("../images/icons/icons2.png");
+    color: #dbebf2;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 25%;
+    cursor: pointer;
+    margin-top: 25px;
+}
+.squares:nth-child(-n+4){
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 0.5cm;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.8);
+}
+.squares:nth-child(1){
+    background: #4240ff;
+}
+.squares:nth-child(2){
+    background: #ab3fdd;
+}
+.squares:nth-child(3){
+    background: #ae163a;
+}
+.squares:nth-child(4){
+    background: #00b200;
+}
+.container .squares:nth-child(-n+4):hover{
+    background-image: url(../images/icons/icons.png);
+}
+.squares:nth-child(1):hover{
+    background: #13b4ff;
+}
+.squares:nth-child(2):hover{
+    transform: scale(0.5);
+    animation-name: race;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(2.5, .2, .3, 2);
+}
+.squares:nth-child(3):hover{
+    transform: scale(1.5);
+}
+.squares:nth-child(4):hover{
+    background: #77b800;
+    border-radius: 4cm;
+}
